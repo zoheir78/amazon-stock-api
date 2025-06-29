@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: amazon-stock-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn amazon_stock_api.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: stock_api.settings
+      - key: PYTHON_VERSION
+        value: 3.11
