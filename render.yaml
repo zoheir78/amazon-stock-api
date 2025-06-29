@@ -3,7 +3,7 @@ services:
     name: amazon-stock-api
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn amazon_stock_api.wsgi:application
+    startCommand: gunicorn stock_api.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: stock_api.settings
