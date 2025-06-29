@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-x=5k*&9_jr8pui_+cglydu8r--y#x3()wsma%*w-3o+9*rdgt!"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["amazon_stock_api.onrender.com"]
 
 
 # Application definition
