@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-x=5k*&9_jr8pui_+cglydu8r--y#x3()wsma%*w-3o+9*rdgt!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ["amazon_stock_api.onrender.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "amazon-stock-api.onrender.com"]
 
 
 # Application definition
